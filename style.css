@@ -1,0 +1,37 @@
+body {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "header header header header"
+    "main main main aside";
+}
+
+header {
+    grid-area: header;
+    background-color: aquamarine;
+}
+
+main {
+    grid-area: main;
+    background-color: orange;
+}
+
+aside {
+    grid-area: aside;
+    background-color: dodgerblue;
+}
+
+.prototype{
+    display:none
+}
+
+li{
+    width: auto;
+    list-style: none;
+}
+
+.person:hover{
+    color: lightblue;
+    cursor: zoom-in;
+}
